@@ -1,4 +1,3 @@
-
 export interface Testimonial {
   name: string;
   channel: string;
