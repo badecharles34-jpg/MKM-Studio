@@ -1,51 +1,55 @@
 <!DOCTYPE html>
-<html lang="fr" class="dark">
-  <head>
+<html lang="fr">
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MKM Studio - Miniatures YouTube Professionnelles</title>
-    <meta name="description" content="MKM Studio — Des miniatures YouTube qui captent l’attention et boostent vos vues. Service de création pour créateurs francophones européens." />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MKM Studio - Miniatures YouTube</title>
+    <meta name="description" content="MKM Studio — Des miniatures YouTube qui captent l’attention et boostent vos vues." />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         darkMode: 'class',
         theme: {
           extend: {
-            fontFamily: {
-              sans: ['Poppins', 'sans-serif'],
-            },
             colors: {
               'brand-red': '#FF0000',
               'dark-bg': '#121212',
               'dark-card': '#1E1E1E',
               'dark-border': '#2D2D2D',
             },
-          },
-        },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            }
+          }
+        }
       }
     </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4",
-    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
-    "vite": "https://aistudiocdn.com/vite@^7.1.12",
-    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.0"
-  }
-}
-</script>
+    
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4",
+        "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+        "vite": "https://aistudiocdn.com/vite@^7.1.12",
+        "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.0"
+      }
+    }
+    </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-white dark:bg-dark-bg text-gray-900 dark:text-gray-100 antialiased">
+<body class="bg-white dark:bg-dark-bg text-gray-900 dark:text-white">
     <div id="root"></div>
-    <script type="module" src="/src/index.tsx"></script>
-  <script type="module" src="/index.tsx"></script>
+    <script type="module" src="./src/index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
 </body>
 </html>
